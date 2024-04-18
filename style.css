@@ -63,6 +63,88 @@
     font-size: var(--font-size-2);
   }
 }
+@media screen and (max-width: 640px) {
+  :root {
+    --grid-container: [full-start] minmax(2rem, 1fr) [inner-start] minmax(0, var(--inner-width)) [inner-end] minmax(2rem,1fr) [full-end];
+  }
+}
+
+body.theme-light {
+  --color-dark: #000000;
+  --color-light: #fff;
+  --color-accent-pink:#E60E9E;
+  --color-accent-yellow: #ffdb58;
+  --color-accent-yellow-opacity: #fff7db;
+  --color-gradient: rgba(0, 0, 0, 0.291);
+}
+
+body.theme-dark {
+  --color-dark: #fff;
+  --color-light: #000000;
+  --color-accent-pink:#E60E9E;
+  --color-accent-yellow: #ffdb58;
+  --color-accent-yellow-opacity: #fff7db;
+  --color-gradient: rgba(0, 0, 0, 0.291);
+}
+
+.darkmode {
+  position: relative;
+}
+.darkmode__button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.darkmode__button svg {
+  width: 1.25rem;
+  stroke: var(--color-dark);
+}
+.darkmode__button--active svg {
+  stroke: var(--color-accent-400);
+}
+.darkmode__list {
+  display: none;
+  border-radius: var(--border-radius);
+  border-top: 1px solid var(--color-white-transparent);
+  background-color: var(--color-gray);
+  margin: 0;
+  padding: 0.3rem 0;
+  list-style: none;
+  position: absolute;
+  width: 9rem;
+  flex-direction: column;
+  top: 60px;
+  right: -50px;
+}
+.darkmode__list--visible {
+  display: flex;
+}
+.darkmode__item:hover {
+  background-color: var(--color-white-transparent);
+}
+.darkmode__item--active button {
+  color: var(--color-accent-400);
+}
+.darkmode__item--active button svg {
+  stroke: var(--color-accent-400);
+}
+.darkmode__theme {
+  border: 0;
+  background: none;
+  padding: 0.4rem 0.8rem;
+  color: var(--color-primary-400);
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  cursor: pointer;
+}
+.darkmode__theme svg {
+  stroke: var(--color-text-dark);
+  width: 1.25rem;
+}
 
 html, body {
   margin: 0;
@@ -250,7 +332,7 @@ p {
   width: 20px;
 }
 
-.container {
+.inner-container {
   display: grid;
   grid-template-columns: var(--grid-container);
 }
@@ -268,6 +350,11 @@ p {
 @media screen and (max-width: 1024px) {
   .hero__text {
     width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero {
+    height: 60vh;
   }
 }
 

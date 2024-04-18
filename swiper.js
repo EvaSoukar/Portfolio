@@ -9,10 +9,11 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
 
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+   autoplay: {
+     delay: 2000,
+     disableOnInteraction: false,
+   },
   
 
 });
+
