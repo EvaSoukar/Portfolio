@@ -39,6 +39,11 @@
                     <path d="M42.101 64.5C40.7844 64.5 39.5394 64.3714 38.366 64.1143C37.1925 63.8857 36.1479 63.5571 35.232 63.1286C34.3448 62.6714 33.6436 62.1286 33.1284 61.5C32.6132 60.8429 32.3557 60.1 32.3557 59.2714C32.3557 58.6429 32.5417 58.1286 32.9138 57.7286C33.2858 57.3286 33.7581 57.0286 34.3305 56.8286C34.9315 56.6 35.5325 56.4857 36.1336 56.4857C36.7919 56.4857 37.3929 56.5857 37.9367 56.7857C38.5091 56.9857 38.967 57.2714 39.3105 57.6429C39.6539 58.0143 39.8257 58.4857 39.8257 59.0571C39.8257 59.4571 39.7398 59.8286 39.5681 60.1714C39.3963 60.4857 39.1244 60.8 38.7524 61.1143C38.2944 61.4571 37.9796 61.7429 37.8079 61.9714C37.6648 62.1714 37.5932 62.4 37.5932 62.6571C37.5932 62.8571 37.765 63.0714 38.1084 63.3C38.4519 63.5 38.9384 63.6714 39.5681 63.8143C40.1977 63.9571 40.9419 64.0286 41.8005 64.0286C42.9739 64.0286 44.0186 63.8857 44.9344 63.6C45.8503 63.3143 46.5658 62.8857 47.081 62.3143C47.6248 61.7143 47.8967 60.9571 47.8967 60.0429C47.8967 59.3 47.6677 58.6286 47.2098 58.0286C46.7805 57.4286 46.0507 56.8571 45.0203 56.3143C43.99 55.7714 42.5732 55.2 40.7701 54.6C38.7381 53.8857 37.121 53.1714 35.9189 52.4572C34.7455 51.7429 33.9012 51 33.386 50.2286C32.8994 49.4286 32.6562 48.5714 32.6562 47.6572C32.6562 45.8572 33.5434 44.4286 35.3179 43.3714C37.121 42.3143 39.5681 41.7857 42.6591 41.7857C44.3191 41.7857 45.8503 42 47.2527 42.4286C48.6551 42.8572 49.7857 43.4572 50.6443 44.2286C51.5029 44.9714 51.9322 45.8714 51.9322 46.9286C51.9322 47.5 51.7605 47.9857 51.417 48.3857C51.0736 48.7572 50.6157 49.0429 50.0432 49.2429C49.4994 49.4429 48.927 49.5429 48.326 49.5429C47.8681 49.5429 47.4101 49.4857 46.9522 49.3714C46.4943 49.2572 46.0793 49.1 45.7072 48.9C45.3351 48.6714 45.0346 48.4 44.8057 48.0857C44.5767 47.7429 44.4622 47.3714 44.4622 46.9714C44.4622 46.1429 44.8915 45.4286 45.7501 44.8286C46.2081 44.4857 46.5229 44.2143 46.6946 44.0143C46.8663 43.8143 46.9522 43.6143 46.9522 43.4143C46.9522 43.2714 46.852 43.1286 46.6517 42.9857C46.48 42.8429 46.2081 42.7286 45.836 42.6429C45.4925 42.5286 45.0775 42.4429 44.591 42.3857C44.1044 42.3 43.575 42.2572 43.0025 42.2572C41.8291 42.2572 40.7701 42.3857 39.8257 42.6429C38.8812 42.9 38.1227 43.2857 37.5503 43.8C37.0065 44.2857 36.7346 44.9143 36.7346 45.6857C36.7346 46.4286 37.0208 47.1143 37.5932 47.7429C38.1657 48.3429 38.967 48.9143 39.9974 49.4572C41.0563 50 42.3157 50.5286 43.7753 51.0429C45.9219 51.8429 47.6105 52.5857 48.8412 53.2714C50.1005 53.9286 51.002 54.6143 51.5458 55.3286C52.0896 56.0429 52.3615 56.8429 52.3615 57.7286C52.3615 58.8714 52.0753 59.8571 51.5029 60.6857C50.9591 61.5143 50.215 62.2143 49.2705 62.7857C48.326 63.3571 47.2384 63.7857 46.0077 64.0714C44.777 64.3571 43.4748 64.5 42.101 64.5Z" fill="#E60E9E"/>
                 </svg>
             </a>
+            <div class="menu__hidden">
+                <label class="menu__hamburger">
+                    <input type="checkbox">
+                </label>
+            </div>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
@@ -155,8 +160,8 @@
                     </div>                
                 </div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
             </div>
+            <div class="swiper-pagination"></div>
             <!-- Swiper box -->
             <div class="swiper__box__container" data-name="ecoshades">
                 <div class="swiper__box">
@@ -316,8 +321,11 @@
             </div>
         </div>
         <div class="about" id="about">
+            <figure class="about__image">
+                <img src="assets/images/Asset 1@2x.webp" alt="">
+            </figure>
             <div class="about__info">
-                <h2 class="about__title">About ME</h2>
+                <h3 class="about__title">About ME</h3>
                 <p class="about__text">As a front-end developer, it is my passion to transform visions into pixel-perfect realities. I use Figma and XD to design websites and then I use HTML, CSS, SCSS and JavaScript to bring the design into the world.</p>
                 <button class="about__button">
                     More info
@@ -327,9 +335,6 @@
                     </svg>
                 </button>
             </div>
-            <figure class="about__image">
-                <img src="assets/images/eva.jpg" alt="">
-            </figure>
         </div>
     </div>
     <footer class="site-footer" id="contact">
@@ -353,18 +358,18 @@
                     </svg>
                 </a>
                 <div class="site-footer__text">
-                    <h3 class="site-footer__title">Thinking of a website?</h3>
+                    <h5 class="site-footer__title">Thinking of a website?</h3>
                     <p class="site-footer__paragraph">I'm here to help you if you need a website for your company, a portfolio to show the world what you can do, or maybe you just want to upgrade the website you already have...</p>
                 </div>
                 <div class="site-footer__contact">
-                    <h4 class="site-footer__title">Contact me</h4>
                     <div class="site-footer__info">
+                        <h5 class="site-footer__title">Contact me</h5>
                         <p class="phone">Phone: +46 70 02 501 77</p>
                         <p class="mail">Email: eva.soukar@outlook.com</p>
                         <p class="address">Address: utgårdsvägen33, Handen 13643</p>
                     </div>
                     <nav class="site-footer__social">
-                        <h4 class="site-footer__title">Also available on:</h4>
+                        <h5 class="site-footer__title">Also available on:</h5>
                         <ul class="site-footer__list">
                             <li class="site-footer__item">
                                 <a href="" class="site-footer__link">
